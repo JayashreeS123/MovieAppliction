@@ -1,0 +1,17 @@
+<div *ngIf="selectedMovie">
+  <h2>{{selectedMovie.title | uppercase}} </h2>
+  <hr>
+  <img src="{{imageUrl}}{{selectedMovie.poster_path}}">
+  <h4>Overview :
+    <i>{{selectedMovie.overview }}</i>
+  </h4>
+  <h4>Release Date :
+    <i>{{selectedMovie.release_date}}</i>
+  </h4>
+  <h4>Status :
+    <i>{{selectedMovie.status}}</i>
+  </h4>
+  <h4>Vote Average :
+    <i>{{selectedMovie.vote_average}}</i>
+  </h4>
+</div>

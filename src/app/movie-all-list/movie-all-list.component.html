@@ -1,0 +1,4 @@
+<div class="row">
+  <p *ngFor="let movie of movieList" (click)="selectedMovie(movie)">{{movie.title}}</p>
+  <app-movie-details [selectedMovie]="currentMovie"></app-movie-details>
+</div>
